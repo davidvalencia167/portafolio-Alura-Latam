@@ -1,0 +1,480 @@
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-link: #000000;
+    --color-title:#464646;
+    --color-skill-box: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.cabecera__logo {
+    max-width: 80px; 
+}
+
+.cabecera__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacion {
+    position: sticky;
+    z-index: 1000;
+}
+
+.navegacion__elemento i {
+    margin-right: 8px;
+    color: #000000;
+}
+
+.navegacion__elemento a:hover {
+    color: blueviolet;
+} 
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.presentation__photo {
+    margin-right: 140px;
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.presentation,
+.about__me {
+    display: flex;
+    padding: 0 2rem 1rem;
+}
+
+.presentation__container {
+    max-width: 600px;
+}
+
+.presentation__title {
+    color: var(--color-title);
+    font-size: 52px;
+}
+
+.presentation__subtitle {
+    font-size: 25px;
+}
+
+.network {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.network__item {
+    text-align: center;
+}
+
+.network__img {
+    display: block;
+    width: 50px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.network__text {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--color-de-link);
+}
+
+.network a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.about__me__title {
+    color: var(--color-title);
+    font-size: 32px;
+}
+
+.about__me__descripcion {
+    font-size: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.skills__title {
+    color: var(--color-title);
+    text-align: center;
+    font-size: 32px;
+}
+
+.skills__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.skills__item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-skill-box);
+    width: 150px;
+    height: 150px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.hobbies__title {
+    color: var(--color-title);
+    text-align: center;
+    font-size: 32px;
+}
+
+.hobbies__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies__item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-skill-box);
+    width: 150px;
+    height: 150px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.education__title {
+    color: var(--color-title);
+    text-align: center;
+    font-size: 32px;
+}
+
+.education__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.education__item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-skill-box);
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__title {
+    color: var(--color-title);
+    text-align: center;
+    font-size: 32px;
+}
+
+.projects__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.projects__item {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-skill-box);
+    width: 800px;
+    height: 800px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-projects {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-projects:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-projects:active {
+    transform: scale(0.95);
+}
+
+.contacto__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #e9f1fc;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacto__imagen img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contacto__formulario {
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contacto__formulario h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contacto__formulario p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn-enviar {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    color: var(--color-de-fondo);
+}
+
+.footer__text,
+.footer__text__year {
+    font-size: 16px;
+    color: var(--color-de-link);
+    text-align: center;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+
+@media(min-width: 843px) {
+    .cabecera {
+        align-items: center;
+    }   
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+
+    .presentation {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .contacto__container {
+        flex-direction: column;
+    }
+
+    .contacto__imagen {
+        margin-bottom: 20px;
+    }
+
+    .skills__item {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-skill-box);
+        width: 140px;
+        height: 120px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+    }   
+}
+
+
+@media(max-width: 767px) {
+    .navegacion__lista {
+        display: flex;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .navegacion__elemento {
+        margin-bottom: 10px;
+    }
+
+    .presentation__container {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .presentation__photo {
+        width: 200px;
+        margin: 20px auto;
+    }
+
+    .about__me__container {
+        padding: 0 15px;
+        text-align: justify;
+    }
+
+    .skills__list, .hobbies__list {
+        gap: 14px;
+        text-align: center;
+    }
+
+    .skills__item, .hobbies__item {
+        display: flex;
+        margin: auto;
+    }
+
+    .education__list {
+        display: flex;
+        text-align: center;
+    }
+
+    .projects__list {
+        display: flex;
+        text-align: center;
+    }
+
+    .contacto__formulario {
+        padding: 0 15px;
+    }
+
+    .footer__text {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer__text__year {
+        text-align: center;
+    }
+}
