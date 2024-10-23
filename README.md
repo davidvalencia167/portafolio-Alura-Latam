@@ -39,6 +39,7 @@ Si deseas clonar este proyecto y ejecutarlo en tu máquina local:
    ```bash
    git clone https://github.com/davidvalencia167/mi-portafolio.git
 2. Navega a la carpeta del proyecto:
+   ```bash
    cd mi-portafolio
 
 ## 🤝 Contribuciones
