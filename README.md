@@ -6,7 +6,6 @@
 
 - **HTML5**
 - **CSS3**
-- **JavaScript**
 
 ## 📄 Secciones del Portafolio
 
